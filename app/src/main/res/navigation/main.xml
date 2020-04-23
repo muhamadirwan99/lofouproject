@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/lost">
+
+    <fragment
+        android:id="@+id/lost"
+        android:name="com.example.lofou.LostFragment"
+        android:label="LOST"
+        tools:layout="@layout/fragment_lost" />
+
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.lofou.SearchFragment"
+        android:label="POST"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/found"
+        android:name="com.example.lofou.FoundFragment"
+        android:label="FOUND"
+        tools:layout="@layout/fragment_found" />
+
+    <fragment
+        android:id="@+id/filterlost"
+        android:name="com.example.lofou.LostFragment2"
+        android:label="FILTER LOST"
+        tools:layout="@layout/fragment_lost2" />
+
+    <fragment
+        android:id="@+id/filterfound"
+        android:name="com.example.lofou.FoundFragment2"
+        android:label="FILTER FOUND"
+        tools:layout="@layout/fragment_found2" />
+
+</navigation>

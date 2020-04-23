@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="213dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/todo"
+        android:onClick="UploadF"
+        app:srcCompat="@drawable/profile_photo_add" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:text="@string/no_name"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:text="@string/_18888888"
+        />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:text="@string/noname_gmail_com"
+        />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:text="@string/_0888888888" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_marginBottom="20dp"
+        android:text="@string/batal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/colorbtnmasuk"
+        android:onClick="EditProfil"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignTop="@+id/button2"
+        android:text="@string/simpan"
+        android:textColor="@color/colorbtnmasuk"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="EditProfil"
+        android:layout_alignEnd="@+id/editText"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="329dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ubah_password"
+        android:textStyle="bold"
+        android:textColor="@color/colorbtnmasuk"
+        android:background="@color/colorbtndaftar"
+        android:textSize="15sp"
+        android:onClick="UbahP"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E8E8E"
+    tools:context=".Hadiah1">
+
+    <ImageView
+        android:id="@+id/view2"
+        android:layout_width="298dp"
+        android:layout_height="346dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/box_outside" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="131dp"
+        android:layout_height="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        app:srcCompat="@drawable/emerald_reward_hadiah" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="246dp"
+        android:layout_height="73dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="Lato"
+        android:text="Hadiah yang akan anda berikan harap dititipkan kepada pihak ULT dalam jangka waktu 1X24 jam!"
+        android:textAlignment="center"
+        android:textColor="@color/texthadiah"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>

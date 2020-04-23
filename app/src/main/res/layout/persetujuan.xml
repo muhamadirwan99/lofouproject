@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Persetujuan">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:src="@drawable/logolf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/linear"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="
+1.App Lofou V.2  hanya digunakan untuk menggunakan layanan yang tersedia.
+2.App Lofou V.2 tidak boleh disalahgunakan untuk menipu, merugikan, dan/atau menimbulkan ketidaknyamanan kepada pihak lain.
+3.Pengguna tidak diperbolehkan mengubah isi situs dan/atau app lofou V.2 untuk tujuan apapun.
+4.App Lofou tidak bertanggung jawab atas kesalahan pengunduhan versi aplikasi yang dilakukan pengguna dan ketidakcocokan perangkat yang digunakan pengguna,serta hal-hal yang terjadi akibatnya.
+5.Jika pengguna terbukti menggunakan app untuk tujuan yang membahayakan, merugikan,atau di luar tujuan pengguna yang dimaksud app ini, maka lofou V.2 berhak melarang pengguna untuk menggunakan app lofou V.2."
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout2"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout2"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ok"
+        android:text="OK"
+        android:onClick="Ok"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout2"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout2"
+        android:layout_marginBottom="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

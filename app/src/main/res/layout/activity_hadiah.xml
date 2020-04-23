@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E8E8E"
+    tools:context=".Hadiah">
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="289dp"
+        android:layout_height="346dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/box_outside" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="131dp"
+        android:layout_height="152dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/emerald_reward_hadiah" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="246dp"
+        android:layout_height="73dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:text="Anda yakin akan memberi hadiah pada penemu barang?"
+        android:textAlignment="center"
+        android:textColor="@color/texthadiah"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="127dp"
+        android:background="@color/colorbtnmasuk"
+        android:onClick="PostLost"
+        android:text="Tidak"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignTop="@+id/button2"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="Hadiah1"
+        android:text="Yakin"
+        android:textColor="@color/colorbtnmasuk"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/textView2" />
+
+</RelativeLayout>

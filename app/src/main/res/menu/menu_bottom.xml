@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/riwayat"
+        android:title="RIWAYAT LOST"
+        android:icon="@android:drawable/arrow_up_float"/>
+
+    <item
+        android:id="@+id/search"
+        android:title="SEARCH"
+        android:icon="@android:drawable/ic_search_category_default"/>
+
+    <item
+        android:id="@+id/filter"
+        android:title="FILTER"
+        android:icon="@android:drawable/ic_menu_sort_by_size"/>
+
+</menu>

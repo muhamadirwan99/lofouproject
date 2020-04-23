@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">LOFOU</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_18888888">18888888</string>
+    <string name="no_name">No Name</string>
+    <string name="noname_gmail_com">noname@gmail.com</string>
+    <string name="_0888888888">0888888888</string>
+    <string name="batal">Batal</string>
+    <string name="simpan">Simpan</string>
+    <string name="ubah_password">Ubah Password</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="todo">TODO</string>
+    <string name="ganti_password">Ganti Password</string>
+    <string name="apakah_anda_yakin_ingin_mengubah_password_anda">Apakah anda yakin ingin mengubah password anda?</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="password">Password</string>
+
+</resources>

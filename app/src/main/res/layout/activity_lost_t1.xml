@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E8E8E"
+    tools:context=".LostT1">
+
+    <ImageView
+        android:id="@+id/view5"
+        android:layout_width="289dp"
+        android:layout_height="374dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/box_outside" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignTop="@+id/view5"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/lost_tutorial_1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/view5"
+        android:layout_below="@+id/imageView21"
+        android:layout_marginStart="13dp"
+        android:background="@color/colorbtnmasuk"
+        android:text="Batal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/view5"
+        android:layout_marginLeft="13dp"
+        android:onClick="batal"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/view5"
+        android:layout_below="@+id/imageView21"
+        android:layout_marginEnd="13dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Selanjutnya"
+        android:textColor="@color/colorbtnmasuk"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/view5"
+        android:layout_marginRight="13dp"
+        android:onClick="Next"
+        />
+
+
+</RelativeLayout>

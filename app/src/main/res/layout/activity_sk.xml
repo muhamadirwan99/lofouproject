@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SK">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="297dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        app:srcCompat="@drawable/logolf" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:text="Syarat dan Ketentuan"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:text="
+1.App Lofou V.2  hanya digunakan untuk menggunakan layanan yang tersedia.
+2.App Lofou V.2 tidak boleh disalahgunakan untuk menipu, merugikan, dan/atau menimbulkan ketidaknyamanan kepada pihak lain.
+3.Pengguna tidak diperbolehkan mengubah isi situs dan/atau app lofou V.2 untuk tujuan apapun.
+4.App Lofou tidak bertanggung jawab atas kesalahan pengunduhan versi aplikasi yang dilakukan pengguna dan ketidakcocokan perangkat yang digunakan pengguna,serta hal-hal yang terjadi akibatnya.
+5.Jika pengguna terbukti menggunakan app untuk tujuan yang membahayakan, merugikan,atau di luar tujuan pengguna yang dimaksud app ini, maka lofou V.2 berhak melarang pengguna untuk menggunakan app lofou V.2."
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="327dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="OK"
+        android:textColor="@color/colorbtnmasuk"
+        android:textSize="16sp"
+        android:textStyle="bold"  />
+
+</RelativeLayout>

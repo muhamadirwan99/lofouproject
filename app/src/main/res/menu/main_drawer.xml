@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title = "Post Barang">
+            <menu>
+                <item
+                    android:onClick="lost"
+                    android:id="@+id/lofou"
+                    android:title="Lost"
+                    android:icon="@drawable/ic_add_to_photos"
+                    android:menuCategory="secondary"/>
+                <item
+                    android:onClick="found"
+                    android:id="@+id/found"
+                    android:title="Found"
+                    android:icon="@drawable/ic_add_to_photos"
+                    android:menuCategory="secondary"/>
+            </menu>
+        </item>
+
+        <item android:title="Riwayat">
+            <menu>
+                <item
+                    android:onClick="riwayatLost"
+                    android:id="@+id/riwayatLost"
+                    android:title="LOST"
+                    android:icon="@android:drawable/ic_menu_recent_history"
+                    android:menuCategory="secondary"/>
+                <item
+                    android:onClick="riwayatFound"
+                    android:id="@+id/riwayatFound"
+                    android:title="FOUND"
+                    android:icon="@android:drawable/ic_menu_recent_history"
+                    android:menuCategory="secondary"/>
+            </menu>
+        </item>
+
+        <item android:title="Bantuan">
+            <menu>
+                <item
+                    android:onClick="hubungi"
+                    android:id="@+id/hubungi"
+                    android:title="Hubungi Kami"
+                    android:icon="@android:drawable/sym_action_chat"
+                    android:menuCategory="secondary"/>
+                <item
+                    android:onClick="info"
+                    android:id="@+id/aplikasi"
+                    android:title="Info Aplikasi"
+                    android:icon="@android:drawable/ic_menu_info_details"
+                    android:menuCategory="secondary"/>
+                <item
+                    android:onClick="syaratKetentuan"
+                    android:id="@+id/syarat"
+                    android:title="Syarat dan Ketentuan"
+                    android:icon="@android:drawable/ic_dialog_info"
+                    android:menuCategory="secondary"/>
+            </menu>
+        </item>
+    </group>
+</menu>

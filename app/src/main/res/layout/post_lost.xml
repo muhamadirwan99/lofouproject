@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostLost">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="97dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/lost"
+        tools:ignore="UnknownId" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="164dp"
+        android:layout_height="133dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:onClick="UploadFoto"
+        app:srcCompat="@drawable/addphoto"
+        android:layout_alignRight="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView4"
+        android:ems="10"
+        android:hint="Nama Barang"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText3"
+        android:ems="10"
+        android:hint="Lokasi Kehilangan"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:ems="10"
+        android:hint="Waktu Kehilangan"
+        android:inputType="date"
+        android:layout_alignLeft="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText2"
+        android:ems="10"
+        android:hint="Deskripsi"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/editText" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginLeft="23dp"
+        app:srcCompat="@drawable/nama_barang" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/editText"
+        android:layout_toStartOf="@+id/editText"
+        app:srcCompat="@drawable/waktu_kehilangan"
+        android:layout_toLeftOf="@+id/editText" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_toStartOf="@+id/editText"
+        app:srcCompat="@drawable/lokasi_kehilangan"
+        android:layout_toLeftOf="@+id/editText" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/editText2"
+        android:layout_toStartOf="@+id/editText"
+        app:srcCompat="@drawable/deskripsi"
+        android:layout_toLeftOf="@+id/editText" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:onClick="Katagori"
+        app:srcCompat="@drawable/post_filter"
+        android:layout_alignRight="@+id/editText" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="26dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_below="@+id/editText4"
+        app:srcCompat="@drawable/tanda_tanya_question_mark"
+        android:layout_alignRight="@+id/editText"
+        android:onClick="LostT1"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView11"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="68dp"
+        android:text="Berikan hadiah?"
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/imageView11" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="Hadiah"
+        android:text="Tambahkan"
+        android:textColor="@color/colorbtnmasuk"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

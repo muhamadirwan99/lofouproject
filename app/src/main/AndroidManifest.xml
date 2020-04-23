@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lofou">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ImageRiwayatRewardFragment"/>
+        <activity android:name=".ImageRiwayatFragment"/>
+        <activity android:name=".UploadFotoLost"/>
+        <activity android:name=".LostT3"/>
+        <activity android:name=".LostT2"/>
+        <activity android:name=".LostT1"/>
+        <activity android:name=".Hadiah1"/>
+        <activity android:name=".Hadiah"/>
+        <activity android:name=".UploadFoto"/>
+        <activity android:name=".Katagori"/>
+        <activity android:name=".FoundT2"/>
+        <activity android:name=".FoundT1"/>
+        <activity android:name=".Terimakasih"/>
+        <activity android:name=".Sukses"/>
+        <activity android:name=".UbahP"/>
+        <activity android:name=".UploadF"/>
+        <activity android:name=".Edit"/>
+        <activity android:name=".EditProfil"/>
+        <activity android:name=".Kirim"/>
+        <activity android:name=".SK"/>
+        <activity android:name=".InfoA"/>
+        <activity android:name=".Hubungi"/>
+        <activity android:name=".MainActivity3"/>
+        <activity android:name=".MainActivity2"/>
+        <activity android:name=".ImageFragment"/>
+        <activity android:name=".ImageRewardFragment"/>
+        <activity android:name=".PostLost"/>
+        <activity android:name=".PostFound"/>
+        <activity android:name=".Persetujuan"/>
+        <activity android:name=".Daftar"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Masuk"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Utama"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

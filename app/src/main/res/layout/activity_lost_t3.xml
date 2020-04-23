@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E8E8E"
+    tools:context=".LostT3">
+
+
+    <ImageView
+        android:id="@+id/view7"
+        android:layout_width="289dp"
+        android:layout_height="374dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/box_outside"
+        />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignTop="@+id/view7"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/lost_tutorial_3" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView23"
+        android:layout_marginStart="50dp"
+        android:text="Batal"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:background="@color/colorbtnmasuk"
+        android:onClick="Batal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView23"
+        android:layout_marginEnd="51dp"
+        android:text="Selesai"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorbtnmasuk"
+        android:onClick="Next"
+        android:layout_marginRight="51dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

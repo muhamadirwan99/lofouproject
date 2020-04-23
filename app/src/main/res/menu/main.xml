@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <item
+         android:title="LOST"
+         android:id="@id/lost"
+         android:icon="@android:drawable/arrow_up_float"
+         android:menuCategory="secondary"/>
+
+    <item
+        android:title="Filter Lost"
+        android:id="@id/filterlost"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:title="Search"
+        android:id="@id/search"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:title="Filter Found"
+        android:id="@id/filterfound"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:title="FOUND"
+        android:id="@id/found"
+        android:icon="@android:drawable/arrow_up_float"
+        android:menuCategory="secondary"/>
+
+</menu>
