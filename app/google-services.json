@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "897302416981",
+    "firebase_url": "https://lofou-dedc5.firebaseio.com",
+    "project_id": "lofou-dedc5",
+    "storage_bucket": "lofou-dedc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897302416981:android:f9826c1042b7ea9bdd0edc",
+        "android_client_info": {
+          "package_name": "com.example.lofou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897302416981-fimv1oacehrcc27lroqccm58on9ukn66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lofou",
+            "certificate_hash": "35c70f5989d7ed356950a02a4433a6a8714616cb"
+          }
+        },
+        {
+          "client_id": "897302416981-i04cgn2aeme2s9hhkrrt5slom2hh2n3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEFJ3IYDsyprhE7M1gR1M5DNxB-6GsSSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897302416981-i04cgn2aeme2s9hhkrrt5slom2hh2n3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
