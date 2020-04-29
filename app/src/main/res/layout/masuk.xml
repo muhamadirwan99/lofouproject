@@ -60,7 +60,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/nim"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="220dp"
@@ -84,13 +84,13 @@
         android:textColor="#FFFFFF"
         android:textSize="17dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toTopOf="@+id/editText" />
+        app:layout_constraintBottom_toBottomOf="@+id/nim"
+        app:layout_constraintEnd_toEndOf="@+id/nim"
+        app:layout_constraintStart_toStartOf="@+id/nim"
+        app:layout_constraintTop_toTopOf="@+id/nim" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/pw"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
@@ -98,21 +98,22 @@
         android:background="@drawable/edittext"
         android:ems="10"
         android:textColor="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toTopOf="@+id/editText" />
+        app:layout_constraintBottom_toBottomOf="@+id/nim"
+        app:layout_constraintEnd_toEndOf="@+id/nim"
+        app:layout_constraintStart_toStartOf="@+id/nim"
+        app:layout_constraintTop_toTopOf="@+id/nim" />
 
     <Button
+        android:id="@+id/masuk"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="MASUK"
         android:onClick="Lanjut"
         android:background="@drawable/custom_button"
-        app:layout_constraintBottom_toBottomOf="@+id/editText2"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toBottomOf="@+id/pw"
+        app:layout_constraintEnd_toEndOf="@+id/pw"
+        app:layout_constraintStart_toStartOf="@+id/pw"
+        app:layout_constraintTop_toTopOf="@+id/pw"
         android:layout_marginTop="120dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
