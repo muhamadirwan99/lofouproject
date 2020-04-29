@@ -45,7 +45,7 @@
         app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/nama"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
@@ -55,6 +55,7 @@
         android:ems="10"
         android:textColor="#000"
         android:hint="Nama"
+        android:inputType="textPersonName"
         android:textColorHint="#000"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="@+id/textView9"
@@ -62,7 +63,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/nim"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -70,47 +71,50 @@
         android:background="@drawable/edittext"
         android:ems="10"
         android:hint="NIM"
+        android:inputType="number"
         android:textColorHint="#000"
         android:textColor="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/editText3"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/editText3" />
+        app:layout_constraintBottom_toBottomOf="@+id/nama"
+        app:layout_constraintEnd_toEndOf="@+id/nama"
+        app:layout_constraintStart_toStartOf="@+id/nama"
+        app:layout_constraintTop_toTopOf="@+id/nama" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/email"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:alpha="0.40"
         android:background="@drawable/edittext"
         android:ems="10"
         android:hint="Email"
+        android:inputType="textEmailAddress"
         android:textColorHint="#000"
         android:textColor="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/editText4"
-        app:layout_constraintEnd_toEndOf="@+id/editText4"
-        app:layout_constraintStart_toStartOf="@+id/editText4"
-        app:layout_constraintTop_toTopOf="@+id/editText4"
+        app:layout_constraintBottom_toBottomOf="@+id/nim"
+        app:layout_constraintEnd_toEndOf="@+id/nim"
+        app:layout_constraintStart_toStartOf="@+id/nim"
+        app:layout_constraintTop_toTopOf="@+id/nim"
         android:layout_marginTop="120dp"/>
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/nohp"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:alpha="0.40"
         android:background="@drawable/edittext"
         android:ems="10"
         android:hint="No.Handphone"
+        android:inputType="number"
         android:textColorHint="#000"
         android:textColor="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/editText5"
-        app:layout_constraintEnd_toEndOf="@+id/editText5"
-        app:layout_constraintStart_toStartOf="@+id/editText5"
-        app:layout_constraintTop_toTopOf="@+id/editText5"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toTopOf="@+id/email"
         android:layout_marginTop="120dp"/>
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/pw"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -118,15 +122,16 @@
         android:background="@drawable/edittext"
         android:ems="10"
         android:hint="Password"
+        android:inputType="textPassword"
         android:textColor="#000"
         android:textColorHint="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/editText6"
-        app:layout_constraintEnd_toEndOf="@+id/editText6"
-        app:layout_constraintStart_toStartOf="@+id/editText6"
-        app:layout_constraintTop_toTopOf="@+id/editText6" />
+        app:layout_constraintBottom_toBottomOf="@+id/nohp"
+        app:layout_constraintEnd_toEndOf="@+id/nohp"
+        app:layout_constraintStart_toStartOf="@+id/nohp"
+        app:layout_constraintTop_toTopOf="@+id/nohp" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/kpw"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -134,12 +139,13 @@
         android:background="@drawable/edittext"
         android:ems="10"
         android:hint="Konfirmasi Password"
+        android:inputType="textPassword"
         android:textColorHint="#000"
         android:textColor="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/editText7"
-        app:layout_constraintEnd_toEndOf="@+id/editText7"
-        app:layout_constraintStart_toStartOf="@+id/editText7"
-        app:layout_constraintTop_toTopOf="@+id/editText7" />
+        app:layout_constraintBottom_toBottomOf="@+id/pw"
+        app:layout_constraintEnd_toEndOf="@+id/pw"
+        app:layout_constraintStart_toStartOf="@+id/pw"
+        app:layout_constraintTop_toTopOf="@+id/pw" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -147,10 +153,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginRight="240dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText9"
-        app:layout_constraintEnd_toEndOf="@+id/editText9"
-        app:layout_constraintStart_toStartOf="@+id/editText9"
-        app:layout_constraintTop_toTopOf="@+id/editText9" />
+        app:layout_constraintBottom_toBottomOf="@+id/kpw"
+        app:layout_constraintEnd_toEndOf="@+id/kpw"
+        app:layout_constraintStart_toStartOf="@+id/kpw"
+        app:layout_constraintTop_toTopOf="@+id/kpw" />
 
     <TextView
         android:id="@+id/textView16"
@@ -169,6 +175,7 @@
         app:layout_constraintTop_toTopOf="@+id/checkBox" />
 
     <Button
+        android:id="@+id/daftar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
