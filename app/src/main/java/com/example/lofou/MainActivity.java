@@ -17,6 +17,7 @@ import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -99,6 +100,12 @@ public class MainActivity extends AppCompatActivity {
     public void syaratKetentuan (MenuItem item) {
         Intent syaratKetentuan = new Intent(MainActivity.this, SK.class);
         startActivity(syaratKetentuan);
+    }
+
+    public void keluar (MenuItem item) {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(),Utama.class));
+        finish();
     }
 
     public void editProfil(View view) {

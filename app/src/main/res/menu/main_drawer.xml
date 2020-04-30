@@ -56,6 +56,12 @@
                     android:title="Syarat dan Ketentuan"
                     android:icon="@android:drawable/ic_dialog_info"
                     android:menuCategory="secondary"/>
+                <item
+                    android:onClick="keluar"
+                    android:id="@+id/keluar"
+                    android:title="Keluar"
+                    android:icon="@android:drawable/ic_lock_power_off"
+                    android:menuCategory="secondary"/>
             </menu>
         </item>
     </group>
