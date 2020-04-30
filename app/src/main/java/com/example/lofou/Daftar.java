@@ -45,10 +45,7 @@ public class Daftar extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
-        if(fAuth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(),Masuk.class));
-            finish();
-        }
+
 
         bDaftar.setOnClickListener(new View.OnClickListener() {
             @Override

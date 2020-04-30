@@ -100,7 +100,7 @@
         android:layout_marginBottom="130dp"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/regis"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/relative"

@@ -19,8 +19,8 @@ public class Utama extends AppCompatActivity {
         startActivity(Masuk);
     }
 
-    public void Daftar(View view) {
-        Intent Daftar = new Intent(Utama.this, Daftar. class);
-        startActivity(Daftar);
+
+    public void Daftar (View view) {
+        startActivity(new Intent(Utama.this,Daftar.class));
     }
 }

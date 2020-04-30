@@ -180,7 +180,6 @@
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
         android:text="DAFTAR"
-        android:onClick="Daftar"
         app:layout_constraintBottom_toBottomOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="@+id/textView16"
         app:layout_constraintStart_toStartOf="@+id/textView16"
