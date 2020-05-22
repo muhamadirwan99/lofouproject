@@ -37,8 +37,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
             android:src="@drawable/l1ogo"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
