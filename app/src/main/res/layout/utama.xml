@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#f2f2f2"
+    android:background="#ffff"
     tools:context=".Utama">
 
     <ImageView
@@ -60,17 +60,17 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/costum_button"
         android:text="MASUK"
         android:onClick="Masuk"
-        android:textColor="@android:color/white"
+        android:textColor="#3e665f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginTop="75dp"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -101,9 +101,9 @@
 
     <Button
         android:id="@+id/regis"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/relative"
+        android:background="@drawable/costum_button2"
         android:text="DAFTAR"
         android:onClick="Daftar"
         app:layout_constraintBottom_toBottomOf="parent"
