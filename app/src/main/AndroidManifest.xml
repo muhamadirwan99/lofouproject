@@ -46,7 +46,8 @@
         <activity android:name=".ImageRewardFragment"/>
         <activity android:name=".PostLost"/>
         <activity android:name=".PostFound"/>
-        <activity android:name=".Persetujuan"/>
+        <activity android:name=".Persetujuan"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".Daftar"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".Masuk"
