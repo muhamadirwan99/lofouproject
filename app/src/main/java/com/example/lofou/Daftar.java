@@ -35,11 +35,9 @@ public class Daftar extends AppCompatActivity {
         setContentView(R.layout.daftar);
 
         Nama = findViewById(R.id.nama);
-        NIM = findViewById(R.id.nim);
         Email = findViewById(R.id.email);
         Nohp = findViewById(R.id.nohp);
         Password = findViewById(R.id.pw);
-        uPassword = findViewById(R.id.kpw);
         bDaftar = findViewById(R.id.daftar);
 
         fAuth = FirebaseAuth.getInstance();
