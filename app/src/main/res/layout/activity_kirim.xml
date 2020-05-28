@@ -15,6 +15,19 @@
         android:layout_centerInParent="true"
         app:srcCompat="@drawable/pesanterkirim" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/costum_button2"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-50dp"
+        android:text="Oke"
+        android:textColor="@color/colorbtnmasuk"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:onClick="Oke"/>
 
 
 </RelativeLayout>
