@@ -14,31 +14,40 @@
         android:layout_height="155dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         app:srcCompat="@drawable/profile_user" />
 
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/namaprofil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView2"
         android:layout_centerHorizontal="true"
-        android:text="Lorem Ipsum"
+        android:layout_marginTop="20dp"
         android:textStyle="bold"
-        android:textSize="24sp"
-        />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="329dp"
         android:layout_height="45dp"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="195dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_alignBottom="@+id/namaprofil"
+        android:layout_marginBottom="-100dp"
+        android:background="@drawable/costum_button2"
         android:onClick="Edit"
         android:text="Edit Profil"
         android:textColor="@color/colorbtnmasuk"
         android:textStyle="bold"
         android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/logo" />
 </RelativeLayout>
