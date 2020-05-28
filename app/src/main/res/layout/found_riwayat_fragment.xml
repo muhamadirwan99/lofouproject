@@ -8,7 +8,7 @@
     tools:context=".FoundRiwayatFragment">
 
     <LinearLayout
-        android:background="@drawable/gradient"
+        android:background="@drawable/costum_button"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
