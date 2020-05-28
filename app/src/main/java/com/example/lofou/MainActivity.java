@@ -14,10 +14,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+
+import javax.annotation.Nullable;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     AppBarConfiguration appBarConfiguration;
     BottomNavigationView bottomNavigationView;
+
+
 
 
 
@@ -39,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
+
+
+
     }
 
     private void init() {
