@@ -79,8 +79,8 @@
         android:text="Batal"
         android:textStyle="bold"
         android:textSize="15dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@color/colorbtnmasuk"
+        android:textColor="#577a73"
+        android:background="@drawable/costum_button"
         android:onClick="Batal"
         />
 
@@ -89,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_alignRight="@+id/view2"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/costum_button2"
         android:layout_alignBottom="@+id/view"
         android:text="Kirim"
         android:textColor="@color/colorbtnmasuk"

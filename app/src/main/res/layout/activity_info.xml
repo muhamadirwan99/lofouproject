@@ -86,11 +86,12 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/costum_button2"
         android:text="OK"
         android:textColor="@color/colorbtnmasuk"
         android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="Ok"/>
 
 
 </RelativeLayout>
