@@ -17,41 +17,42 @@
     <ImageView
         android:id="@+id/imageView23"
         android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/view7"
+        android:layout_alignRight="@+id/view7"
         android:layout_height="300dp"
         android:layout_alignTop="@+id/view7"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
         app:srcCompat="@drawable/found_t2" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/button4"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/imageView23"
-        android:layout_marginStart="47dp"
-        android:background="@color/colorbtnmasuk"
+        android:layout_marginLeft="10dp"
+        android:layout_alignLeft="@+id/view7"
+        android:background="@drawable/costum_button"
         android:onClick="batal"
         android:text="Batal"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/text"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="47dp" />
+        />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_below="@+id/imageView23"
-        android:layout_marginEnd="48dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_alignRight="@+id/view7"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/costum_button2"
         android:onClick="Next"
         android:text="Selesai"
         android:textColor="@color/colorbtnmasuk"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="48dp" />
+        />
 
 </RelativeLayout>
