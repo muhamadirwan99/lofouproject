@@ -18,9 +18,9 @@
         android:id="@+id/imageView5"
         android:layout_width="131dp"
         android:layout_height="152dp"
-        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/view2"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="136dp"
         app:srcCompat="@drawable/emerald_reward_hadiah" />
 
     <TextView
@@ -36,5 +36,18 @@
         android:textSize="15sp"
         android:textStyle="bold"
         android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/okehadiah"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:text="OK"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorbtnmasuk"
+        android:background="@drawable/costum_button2"
+        android:onClick="Ok"
+        />
 
 </RelativeLayout>
