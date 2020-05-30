@@ -20,6 +20,9 @@
         android:id="@+id/imageView23"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignLeft="@+id/view7"
+        android:layout_alignRight="@+id/view7"
         android:layout_alignTop="@+id/view7"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/lost_tutorial_3" />
@@ -28,32 +31,28 @@
         android:id="@+id/button10"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_alignLeft="@+id/view7"
         android:layout_below="@+id/imageView23"
-        android:layout_marginStart="50dp"
         android:text="Batal"
+        android:layout_marginLeft="10dp"
         android:textSize="15sp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/text"
         android:textStyle="bold"
-        android:background="@color/colorbtnmasuk"
-        android:onClick="Batal"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="50dp" />
+        android:background="@drawable/costum_button"
+        android:onClick="Batal" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/view7"
         android:layout_below="@+id/imageView23"
-        android:layout_marginEnd="51dp"
+        android:layout_marginRight="10dp"
         android:text="Selesai"
         android:textStyle="bold"
         android:textSize="15sp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/costum_button2"
         android:textColor="@color/colorbtnmasuk"
-        android:onClick="Next"
-        android:layout_marginRight="51dp"
-        android:layout_alignParentRight="true" />
+        android:onClick="Next"/>
 
 </RelativeLayout>
