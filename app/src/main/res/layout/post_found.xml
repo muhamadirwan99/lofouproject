@@ -21,19 +21,36 @@
         android:layout_height="133dp"
         android:layout_below="@+id/imageView2"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/addphoto"
-        android:onClick="UploadFoto"/>
+        app:srcCompat="@drawable/addphoto"/>
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="280dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-51dp"
+        android:layout_marginRight="-51dp"
+        android:layout_marginBottom="23dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Tambahkan Foto"
+        android:textColor="@color/colorbtnmasuk"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="285dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView3"
+        android:layout_below="@+id/button13"
         android:layout_toEndOf="@+id/imageView4"
         android:ems="10"
         android:hint="Nama Barang"
         android:inputType="textPersonName"
         android:layout_toRightOf="@+id/imageView4" />
+
 
     <EditText
         android:id="@+id/editText2"
@@ -42,7 +59,7 @@
         android:layout_alignStart="@+id/editText"
         android:layout_below="@+id/editText3"
         android:ems="10"
-        android:hint="Lokasi Kehilangan"
+        android:hint="Lokasi Ditemukan"
         android:inputType="textPersonName"
         android:layout_alignLeft="@+id/editText" />
 
@@ -53,8 +70,9 @@
         android:layout_alignStart="@+id/editText"
         android:layout_below="@+id/editText"
         android:ems="10"
-        android:hint="Waktu Kehilangan"
-        android:inputType="date"
+        android:textSize="12dp"
+        android:hint="Tanggal dan Waktu Contoh:(01 Januari 2000 18.30)"
+        android:inputType="textLongMessage"
         android:layout_alignLeft="@+id/editText" />
 
     <EditText
@@ -73,7 +91,7 @@
         android:layout_width="34dp"
         android:layout_height="38dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageView3"
+        android:layout_below="@+id/button13"
         android:layout_marginStart="22dp"
         app:srcCompat="@drawable/nama_barang"
         android:layout_alignParentLeft="true"
@@ -138,8 +156,8 @@
         android:text="Tambahkan"
         android:textColor="@color/colorbtnmasuk"
         android:textSize="15dp"
-        android:textStyle="bold"
-        android:onClick="Terimakasih"/>
+        android:onClick="FoundFragmen"
+        android:textStyle="bold"/>
 
 
 </RelativeLayout>

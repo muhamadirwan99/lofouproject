@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "897302416981-lanmpsclf0si0mq6thrj2utqg1gerb4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lofou",
+            "certificate_hash": "d1b125485822669cd40987ea663702eace8bb5bb"
+          }
+        },
+        {
           "client_id": "897302416981-fimv1oacehrcc27lroqccm58on9ukn66.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
