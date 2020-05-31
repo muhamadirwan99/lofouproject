@@ -18,64 +18,86 @@
     <View
         android:id="@+id/view2"
         android:layout_width="260dp"
-        android:layout_height="284dp"
+        android:layout_height="350dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="67dp"
+        android:layout_marginTop="0dp"
         android:background="@color/colorbtnmasuk" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="250dp"
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="93dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="450dp"
         android:text="Deskripsikan masalah anda"
+        android:textColor="#464647"
         android:textSize="15dp"
         android:textStyle="bold"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="220dp"
+        android:visibility="visible"
+        android:layout_height="2dp"
+        android:background="#a3a3a3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+
+        />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="260dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/bar"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/view2"
+        >
+
+        <EditText
+            android:id="@+id/masalah"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:background="@null"
+            />
+
+    </ScrollView>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/view2"
-        android:layout_marginBottom="80dp"
+        android:layout_alignBottom="@+id/view"
         android:text="Batal"
         android:textStyle="bold"
         android:textSize="15dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@color/colorbtnmasuk"
-
+        android:textColor="#577a73"
+        android:background="@drawable/costum_button"
+        android:onClick="Batal"
         />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignTop="@+id/button"
-        android:background="@color/colorPrimaryDark"
+        android:layout_alignRight="@+id/view2"
+        android:background="@drawable/costum_button2"
+        android:layout_alignBottom="@+id/view"
         android:text="Kirim"
         android:textColor="@color/colorbtnmasuk"
         android:textSize="15dp"
         android:textStyle="bold"
         android:onClick="Kirim"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/editText"
-        android:layout_marginLeft="74dp"
-        android:text="masalah saya adalah...."
-        android:inputType="text" />
+
 
 
 </RelativeLayout>

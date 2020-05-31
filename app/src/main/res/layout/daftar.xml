@@ -4,30 +4,39 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#f2f2f2"
+    android:background="#ffff"
     tools:context=".Daftar">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="400dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="550dp"
-        android:src="@drawable/logolf"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        <View
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="30dp"
+            android:background="#59ba98"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logolf"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintEnd_toEndOf="@id/header"
+            app:layout_constraintStart_toStartOf="@id/header"
+            android:layout_marginTop="25dp"
+
+            />
+
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="300dp"
         android:layout_height="500dp"
-        android:background="#0D5C10"
+        android:layout_marginTop="600dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        android:layout_marginTop="600dp"/>
+        app:layout_constraintVertical_bias="0.505" />
 
     <TextView
         android:id="@+id/textView9"
@@ -36,7 +45,7 @@
         android:layout_marginRight="110dp"
         android:layout_marginBottom="450dp"
         android:text="Silahkan Isi data berikut "
-        android:textColor="#FFFFFF"
+        android:textColor="#464647"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
@@ -45,68 +54,46 @@
         app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
 
     <EditText
+
         android:id="@+id/nama"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="90dp"
-        android:alpha="0.40"
-        android:background="@drawable/edittext"
-        android:ems="10"
-        android:textColor="#000"
+        android:inputType="text"
         android:hint="Nama"
-        android:inputType="textPersonName"
-        android:textColorHint="#000"
+        android:textColor="#464647"
+        android:textColorHint="#7e7e7e"
+        android:backgroundTint="#7e7e7e"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="@+id/textView9"
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toTopOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/nim"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:alpha="0.40"
-        android:background="@drawable/edittext"
-        android:ems="10"
-        android:hint="NIM"
-        android:inputType="number"
-        android:textColorHint="#000"
-        android:textColor="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/nama"
-        app:layout_constraintEnd_toEndOf="@+id/nama"
-        app:layout_constraintStart_toStartOf="@+id/nama"
-        app:layout_constraintTop_toTopOf="@+id/nama" />
-
-    <EditText
         android:id="@+id/email"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:alpha="0.40"
-        android:background="@drawable/edittext"
-        android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColorHint="#000"
-        android:textColor="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/nim"
-        app:layout_constraintEnd_toEndOf="@+id/nim"
-        app:layout_constraintStart_toStartOf="@+id/nim"
-        app:layout_constraintTop_toTopOf="@+id/nim"
+        android:textColor="#464647"
+        android:textColorHint="#7e7e7e"
+        android:backgroundTint="#7e7e7e"
+        app:layout_constraintBottom_toBottomOf="@+id/nama"
+        app:layout_constraintEnd_toEndOf="@+id/nama"
+        app:layout_constraintStart_toStartOf="@+id/nama"
+        app:layout_constraintTop_toTopOf="@+id/nama"
         android:layout_marginTop="120dp"/>
 
     <EditText
         android:id="@+id/nohp"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:alpha="0.40"
-        android:background="@drawable/edittext"
-        android:ems="10"
         android:hint="No.Handphone"
         android:inputType="number"
-        android:textColorHint="#000"
-        android:textColor="#000"
+        android:textColor="#464647"
+        android:textColorHint="#7e7e7e"
+        android:backgroundTint="#7e7e7e"
         app:layout_constraintBottom_toBottomOf="@+id/email"
         app:layout_constraintEnd_toEndOf="@+id/email"
         app:layout_constraintStart_toStartOf="@+id/email"
@@ -118,34 +105,16 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
-        android:alpha="0.40"
-        android:background="@drawable/edittext"
-        android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColor="#000"
-        android:textColorHint="#000"
+        android:textColor="#464647"
+        android:textColorHint="#7e7e7e"
+        android:backgroundTint="#7e7e7e"
         app:layout_constraintBottom_toBottomOf="@+id/nohp"
         app:layout_constraintEnd_toEndOf="@+id/nohp"
         app:layout_constraintStart_toStartOf="@+id/nohp"
         app:layout_constraintTop_toTopOf="@+id/nohp" />
 
-    <EditText
-        android:id="@+id/kpw"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:alpha="0.40"
-        android:background="@drawable/edittext"
-        android:ems="10"
-        android:hint="Konfirmasi Password"
-        android:inputType="textPassword"
-        android:textColorHint="#000"
-        android:textColor="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/pw"
-        app:layout_constraintEnd_toEndOf="@+id/pw"
-        app:layout_constraintStart_toStartOf="@+id/pw"
-        app:layout_constraintTop_toTopOf="@+id/pw" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -153,10 +122,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginRight="240dp"
-        app:layout_constraintBottom_toBottomOf="@+id/kpw"
-        app:layout_constraintEnd_toEndOf="@+id/kpw"
-        app:layout_constraintStart_toStartOf="@+id/kpw"
-        app:layout_constraintTop_toTopOf="@+id/kpw" />
+        android:buttonTint="#464647"
+        app:layout_constraintBottom_toBottomOf="@+id/pw"
+        app:layout_constraintEnd_toEndOf="@+id/pw"
+        app:layout_constraintStart_toStartOf="@+id/pw"
+        app:layout_constraintTop_toTopOf="@+id/pw"/>
 
     <TextView
         android:id="@+id/textView16"
@@ -165,7 +135,7 @@
         android:layout_marginLeft="270dp"
         android:layout_marginBottom="3dp"
         android:text="Persetujuan Syarat dan Ketentuan"
-        android:textColor="#FFFFFF"
+        android:textColor="#464647"
         android:textSize="15dp"
         android:textStyle="bold"
         android:onClick="Syarat"
@@ -176,15 +146,15 @@
 
     <Button
         android:id="@+id/daftar"
-        android:layout_width="150dp"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/costum_button3"
         android:text="DAFTAR"
         app:layout_constraintBottom_toBottomOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="@+id/textView16"
         app:layout_constraintStart_toStartOf="@+id/textView16"
         app:layout_constraintTop_toTopOf="@+id/textView16"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="140dp"
         android:layout_marginRight="20dp"/>
 
     <ProgressBar
@@ -192,7 +162,7 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:layout_marginRight="20dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/daftar"

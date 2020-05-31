@@ -19,87 +19,80 @@
         app:srcCompat="@drawable/profile_photo_add" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/nama_profil"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:inputType="text"
-        android:text="@string/no_name"
+        android:layout_marginTop="50dp"
         />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/email_profil"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true"
-        android:inputType="text"
-        android:text="@string/_18888888"
-        />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/nama_profil"
         android:layout_centerHorizontal="true"
         android:inputType="textEmailAddress"
-        android:text="@string/noname_gmail_com"
+        android:layout_marginTop="10dp"
         />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/nohp_profil"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/email_profil"
         android:layout_centerHorizontal="true"
         android:inputType="text"
-        android:text="@string/_0888888888" />
+        android:layout_marginTop="10dp"
+        />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/editText"
+        android:layout_alignLeft="@+id/nama_profil"
         android:layout_marginBottom="20dp"
         android:text="@string/batal"
         android:textSize="15sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
-        android:background="@color/colorbtnmasuk"
+        android:background="@drawable/costum_button"
         android:onClick="EditProfil"
-        android:layout_alignStart="@+id/editText" />
+        android:layout_alignStart="@+id/nama_profil"
+        />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="148dp"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/editText"
+        android:layout_alignRight="@+id/nama_profil"
         android:layout_alignTop="@+id/button2"
         android:text="@string/simpan"
         android:textColor="@color/colorbtnmasuk"
         android:textStyle="bold"
         android:textSize="15sp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/costum_button2"
         android:onClick="EditProfil"
-        android:layout_alignEnd="@+id/editText"
+        android:layout_alignEnd="@+id/nama_profil"
         />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/reset"
         android:layout_width="329dp"
         android:layout_height="45dp"
-        android:layout_below="@+id/editText4"
+        android:layout_below="@+id/nohp_profil"
         android:layout_centerHorizontal="true"
-        android:text="@string/ubah_password"
+        android:text="Reset Password"
         android:textStyle="bold"
         android:textColor="@color/colorbtnmasuk"
-        android:background="@color/colorbtndaftar"
+        android:background="@drawable/costum_button3"
         android:textSize="15sp"
-        android:onClick="UbahP"
+        android:layout_marginTop="30dp"
         />
+
 
 
 </RelativeLayout>

@@ -12,6 +12,13 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         app:srcCompat="@drawable/box_outside" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logolf"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -19,10 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="190dp"
         android:text="@string/ubah_password"
         android:textAlignment="center"
-        android:textColor="@color/color"
+        android:textColor="@color/colorAccent"
         android:textSize="25sp"
         android:textStyle="bold"
         android:gravity="center_horizontal" />
@@ -33,8 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="135dp"
-        android:hint="@string/password"
+        android:layout_marginTop="300dp"
+        android:hint="Password Baru"
         android:inputType="textPassword" />
 
     <EditText
@@ -43,8 +50,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/textView2"
-        android:layout_marginTop="197dp"
-        android:hint="@string/ubah_password"
+        android:layout_marginTop="250dp"
+        android:hint="Password Lama"
         android:inputType="textPassword"
         android:layout_alignLeft="@+id/textView2" />
 
@@ -52,9 +59,9 @@
         android:id="@+id/editText10"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/textView2"
-        android:layout_marginBottom="211dp"
+        android:layout_marginTop="350dp"
         android:hint="@string/konfirmasi_password"
         android:inputType="textPassword"
         android:layout_alignLeft="@+id/textView2" />
@@ -63,12 +70,12 @@
         android:id="@+id/textView3"
         android:layout_width="303dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="160dp"
+        android:layout_marginTop="435dp"
         android:text="@string/apakah_anda_yakin_ingin_mengubah_password_anda"
         android:textAlignment="center"
-        android:textColor="@color/color"
+        android:textColor="@color/colorAccent"
         android:textSize="15sp"
         android:textStyle="bold"
         android:gravity="center_horizontal" />
@@ -76,33 +83,34 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="128dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
         android:layout_alignTop="@+id/button6"
-        android:layout_marginStart="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="-1dp"
         android:background="@color/colorbtndaftar"
         android:onClick="Edit"
         android:text="@string/batal"
         android:textColor="@color/colorbtnmasuk"
         android:textSize="15sp"
-        android:textStyle="bold"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="41dp" />
+        android:textStyle="bold" />
 
     <Button
-        android:onClick="Berhasil"
         android:id="@+id/button6"
-        android:layout_width="129dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="95dp"
-        android:layout_marginEnd="42dp"
-        android:text="@string/ganti_password"
-        android:textColor="@color/colorPrimaryDark"
-        android:textStyle="bold"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="42dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="180dp"
+        android:onClick="Berhasil"
+        android:text="@string/ganti_password"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
 
 </RelativeLayout>

@@ -18,7 +18,10 @@
         android:id="@+id/imageView21"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
+        android:layout_alignLeft="@+id/view5"
+        android:layout_alignRight="@+id/view5"
         android:layout_alignTop="@+id/view5"
+        android:layout_marginTop="4dp"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/found_t1" />
 
@@ -26,32 +29,29 @@
         android:id="@+id/button4"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/imageView21"
-        android:layout_marginStart="48dp"
-        android:background="@color/colorbtnmasuk"
+        android:layout_marginLeft="10dp"
+        android:layout_alignLeft="@+id/view5"
+        android:background="@drawable/costum_button"
         android:onClick="batal"
         android:text="Batal"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/text"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="48dp" />
+         />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/view5"
         android:layout_below="@+id/imageView21"
-        android:layout_marginEnd="48dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/costum_button2"
         android:onClick="Next"
         android:text="Selanjutnya"
         android:textColor="@color/colorbtnmasuk"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="48dp" />
+        android:layout_marginRight="10dp"/>
 
 </RelativeLayout>

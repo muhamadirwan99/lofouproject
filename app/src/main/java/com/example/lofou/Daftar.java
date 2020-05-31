@@ -1,12 +1,14 @@
 package com.example.lofou;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,16 +20,26 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Daftar extends AppCompatActivity {
 
+    public static final String TAG = "TAG";
     EditText Nama, NIM, Email, Nohp, Password, uPassword;
     Button bDaftar;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
+    FirebaseFirestore fStore;
+    String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,14 +47,13 @@ public class Daftar extends AppCompatActivity {
         setContentView(R.layout.daftar);
 
         Nama = findViewById(R.id.nama);
-        NIM = findViewById(R.id.nim);
         Email = findViewById(R.id.email);
         Nohp = findViewById(R.id.nohp);
         Password = findViewById(R.id.pw);
-        uPassword = findViewById(R.id.kpw);
         bDaftar = findViewById(R.id.daftar);
 
         fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
 
@@ -50,8 +61,10 @@ public class Daftar extends AppCompatActivity {
         bDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = Email.getText().toString().trim();
+                final String email = Email.getText().toString().trim();
                 String password = Password.getText().toString().trim();
+                final String nama = Nama.getText().toString();
+                final String nohp = Nohp.getText().toString();
 
                 if(TextUtils.isEmpty(email)){
                     Email.setError("Email dibutuhkan");
@@ -76,6 +89,23 @@ public class Daftar extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(Daftar.this,"Akun telah dibuat", Toast.LENGTH_SHORT).show();
+                            userID = fAuth.getCurrentUser().getUid();
+                            DocumentReference documentReference = fStore.collection("users").document(userID);
+                            Map<String,Object> user = new HashMap<>();
+                            user.put("nama",nama);
+                            user.put("email",email);
+                            user.put("nohp",nohp);
+                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Log.d(TAG, "onSuccess: akun telah berhasil dibuat untuk "+ userID);
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.d(TAG, "onFailure: "+e.toString());
+                                }
+                            });
                             startActivity(new Intent(getApplicationContext(),Masuk.class));
 
                         }else{

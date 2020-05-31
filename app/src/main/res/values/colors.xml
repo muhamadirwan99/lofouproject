@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#59ba98</color>
+    <color name="colorPrimaryDark">#1f4e45</color>
     <color name="colorAccent">#03DAC5</color>
 
     <color name="colorbtnmasuk">#F1F1F1</color>
@@ -12,5 +12,6 @@
     <color name="label">#464646</color>
     <color name="texthadiah">#000000</color>
     <color name="post">#464646</color>
+    <color name="text">#577a73</color>
 
 </resources>
