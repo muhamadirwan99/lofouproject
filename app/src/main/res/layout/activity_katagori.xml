@@ -6,231 +6,172 @@
     android:layout_height="match_parent"
     android:background="#8E8E8E"
     tools:context=".Katagori">
+
     <ImageView
         android:id="@+id/view4"
         android:layout_width="297dp"
         android:layout_height="396dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        app:srcCompat="@drawable/box_outside" />
+        app:srcCompat="@drawable/box_outside"
+        android:layout_centerInParent="true"
+        />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/button5"
-        android:layout_marginTop="50dp"
-        android:text="Pilih Katagori"
+        android:layout_alignTop="@+id/view4"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/view4"
+        android:layout_marginLeft="20dp"
+        android:text="Pilih Kategori"
         android:textColor="@color/color"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_alignLeft="@+id/button5" />
+        android:textStyle="bold" />
+    
+    <CheckBox
+        android:id="@+id/aksesoris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="10dp"
+        android:text="Aksesoris" />
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="28dp"
-        android:layout_height="30dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/textView5"
-        android:layout_marginRight="64dp"
-        app:srcCompat="@drawable/post_filter" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView14"
-        android:layout_alignStart="@+id/textView15"
-        android:text="Aksesoris"
-        android:layout_alignLeft="@+id/textView15" />
+        android:id="@+id/imageAksesoris"
+        android:layout_width="29dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/aksesoris"
+        android:layout_alignRight="@+id/aksesoris"
+        android:layout_marginRight="-40dp"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="10dp"/>
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/alattulis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView14"
-        android:layout_alignStart="@+id/imageView12"
-        android:text=""
-        android:layout_alignLeft="@+id/imageView12" />
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/aksesoris"
+        android:layout_marginTop="5dp"
+        android:text="Alat Tulis" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView15"
-        android:layout_alignStart="@+id/textView13"
-        android:text="Alat Tulis"
-        android:layout_alignLeft="@+id/textView13" />
-
-    <CheckBox
-        android:id="@+id/checkBox8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView13"
-        android:layout_alignStart="@+id/imageView12"
-        android:text=""
-        android:layout_alignLeft="@+id/imageView12" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView16"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="78dp"
-        android:text="Elektronik"
-        android:layout_marginLeft="78dp"
-        android:layout_alignParentLeft="true" />
+    <ImageView
+        android:id="@+id/imageAlattulis"
+        android:layout_width="29dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/alattulis"
+        android:layout_alignRight="@+id/alattulis"
+        android:layout_marginRight="-40dp"
+        android:layout_below="@+id/aksesoris"
+        android:layout_marginTop="5dp"/>
 
     <CheckBox
-        android:id="@+id/checkBox9"
+        android:id="@+id/elektronik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView15"
-        android:layout_alignStart="@+id/imageView12"
-        android:text=""
-        android:layout_alignLeft="@+id/imageView12" />
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/alattulis"
+        android:layout_marginTop="5dp"
+        android:text="Elektronik" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView18"
-        android:layout_alignStart="@+id/textView13"
-        android:text="Pakaian"
-        android:layout_alignLeft="@+id/textView13" />
-
-    <CheckBox
-        android:id="@+id/checkBox10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView16"
-        android:layout_alignStart="@+id/imageView12"
-        android:text=""
-        android:layout_alignLeft="@+id/imageView12" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/checkBox11"
-        android:layout_alignStart="@+id/textView13"
-        android:text="Transportasi"
-        android:layout_alignLeft="@+id/textView13" />
+    <ImageView
+        android:id="@+id/imageElektronik"
+        android:layout_width="29dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/elektronik"
+        android:layout_alignRight="@+id/elektronik"
+        android:layout_marginRight="-40dp"
+        android:layout_below="@+id/alattulis"
+        android:layout_marginTop="5dp"/>
 
     <CheckBox
-        android:id="@+id/checkBox11"
+        android:id="@+id/pakaian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/imageView12"
-        android:layout_below="@+id/textView16"
-        android:text=""
-        android:layout_alignLeft="@+id/imageView12" />
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/elektronik"
+        android:layout_marginTop="5dp"
+        android:text="Pakaian" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView20"
-        android:layout_alignStart="@+id/textView13"
-        android:text="Lainnya"
-        android:layout_alignLeft="@+id/textView13" />
+    <ImageView
+        android:id="@+id/imagePakaian"
+        android:layout_width="29dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/pakaian"
+        android:layout_alignRight="@+id/pakaian"
+        android:layout_marginRight="-40dp"
+        android:layout_below="@+id/elektronik"
+        android:layout_marginTop="5dp"/>
 
     <CheckBox
-        android:id="@+id/checkBox12"
+        android:id="@+id/transportasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/imageView12"
-        android:layout_below="@+id/checkBox11"
-        android:text=""
-        android:layout_alignLeft="@+id/imageView12" />
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/pakaian"
+        android:layout_marginTop="5dp"
+        android:text="Transportasi" />
+
+    <ImageView
+        android:id="@+id/imageTransportasi"
+        android:layout_width="29dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/transportasi"
+        android:layout_alignRight="@+id/transportasi"
+        android:layout_marginRight="-40dp"
+        android:layout_below="@+id/pakaian"
+        android:layout_marginTop="5dp"/>
+
+    <CheckBox
+        android:id="@+id/lainnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/transportasi"
+        android:layout_marginTop="5dp"
+        android:text="Lainnya" />
+
+    <ImageView
+        android:id="@+id/imageLainnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lainnya"
+        android:layout_alignRight="@+id/lainnya"
+        android:layout_marginRight="-40dp"
+        android:layout_below="@+id/transportasi"
+        android:layout_marginTop="5dp"/>
 
     <Button
         android:id="@+id/button5"
         android:layout_width="113dp"
         android:layout_height="37dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="171dp"
-        android:layout_marginStart="53dp"
         android:background="@drawable/costum_button"
         android:onClick="PostFound"
         android:text="Batal"
         android:textColor="@color/text"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="53dp" />
+        android:layout_alignLeft="@+id/view4"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/view4"
+        android:layout_marginBottom="20dp"
+        />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="108dp"
         android:layout_height="38dp"
-        android:layout_alignEnd="@+id/imageView12"
-        android:layout_alignTop="@+id/button5"
+        android:layout_alignBottom="@+id/view4"
+        android:layout_marginBottom="20dp"
+        android:layout_alignRight="@+id/view4"
+        android:layout_marginRight="20dp"
         android:background="@drawable/costum_button2"
         android:onClick="PostFound"
         android:text="Konfirmasi"
         android:textColor="@color/colorbtnmasuk"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:layout_alignRight="@+id/imageView12" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="29dp"
-        android:layout_height="32dp"
-        android:layout_above="@+id/checkBox7"
-        android:layout_alignStart="@+id/textView5"
-        app:srcCompat="@drawable/aksesoris"
-        android:layout_alignLeft="@+id/textView5" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="29dp"
-        android:layout_height="32dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_marginTop="129dp"
-        app:srcCompat="@drawable/alattulis"
-        android:layout_alignLeft="@+id/textView5" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="29dp"
-        android:layout_height="32dp"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_below="@+id/checkBox7"
-        app:srcCompat="@drawable/elektronik"
-        android:layout_alignLeft="@+id/textView5" />
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="29dp"
-        android:layout_height="32dp"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_below="@+id/textView15"
-        app:srcCompat="@drawable/pakaian"
-        android:layout_alignLeft="@+id/textView5" />
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="29dp"
-        android:layout_height="32dp"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_below="@+id/textView16"
-        app:srcCompat="@drawable/transportasi"
-        android:layout_alignLeft="@+id/textView5" />
-
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="29dp"
-        android:layout_height="32dp"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_below="@+id/checkBox11"
-        app:srcCompat="@drawable/lainnya"
-        android:layout_alignLeft="@+id/textView5" />
+        />
 
 </RelativeLayout>
